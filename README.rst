@@ -30,6 +30,6 @@ On Linux you can do this in the terminal by do the following:
 
 .. code-block:: sh
 
-    export SPLITPDF_IDENTIFIER_REGEX="K\/\d{5}\s"
+    export SPLITPDF_IDENTIFIER_REGEX="K\/\d{5}"
 
-This will match customer id's like `K/08151 `.
+This will match customer id's like `K/08151`.

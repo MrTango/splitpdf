@@ -1,13 +1,14 @@
 [tool.poetry]
 name = "splitpdf"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["MrTango <md@derico.de>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 click = "^8.0.1"
 PyPDF2 = "^1.26.0"
+pdfreader = "^0.1.10"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

@@ -1,4 +1,4 @@
-__version__ = "0.1.0"
+__version__ = "0.1.3"
 
 import click
 import os
@@ -48,6 +48,8 @@ def split_pdf(input_file, output_path, compact):
                 identifier = "{}".format(match.group().strip())
         identifier = identifier.replace("/", "-")
         if compact:
+            if not identifier:
+                identifier = "page{0}".format(page + 1)
             output_filename = "{}.pdf".format(normalize_filename(identifier))
         else:
             output_filename = "{}_{}_p{}.pdf".format(fname, normalize_filename(identifier), page + 1)
